@@ -1,0 +1,25 @@
+# Fibonacci series program
+
+def fibonacci_series(n):
+    a, b = 0, 1
+    count = 0
+    while count < n:
+        print(a, end=' ')
+        a, b = b, a + b
+        count += 1
+
+# Get input from user
+try:
+    n = int(input("Enter the number of terms in Fibonacci series: "))
+    if n <= 0:
+        print("Please enter a positive integer.")
+    else:
+        print(f"First {n} terms of Fibonacci series:")
+        fibonacci_series(n)
+except ValueError:
+    print("Invalid input! Please enter a valid integer.")
+
+OUTPUT:
+Enter the number of terms in Fibonacci series: 9
+First 9 terms of Fibonacci series:
+0 1 1 2 3 5 8 13 21 
