@@ -1,0 +1,40 @@
+
+import math
+
+# 1. Exchange the values of two variables
+print("Exchange the values of two variables:")
+a = 5
+b = 10
+print("Before swapping: a =", a, ", b =", b)
+a, b = b, a
+print("After swapping: a =", a, ", b =", b)
+print("-" * 40)
+
+# 2. Circulate the values of three variables (a -> b, b -> c, c -> a)
+print("Circulate the values of three variables:")
+x = 1
+y = 2
+z = 3
+print("Before circulation: x =", x, ", y =", y, ", z =", z)
+x, y, z = z, x, y
+print("After circulation: x =", x, ", y =", y, ", z =", z)
+print("-" * 40)
+
+# 3. Distance between two points (x1, y1) and (x2, y2)
+print("Distance between two points:")
+x1, y1 = 3, 4
+x2, y2 = 7, 1
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print(f"Distance between ({x1},{y1}) and ({x2},{y2}) is {distance:.2f}")
+
+OUTPUT:
+Exchange the values of two variables:
+Before swapping: a = 5 , b = 10
+After swapping: a = 10 , b = 5
+----------------------------------------
+Circulate the values of three variables:
+Before circulation: x = 1 , y = 2 , z = 3
+After circulation: x = 3 , y = 1 , z = 2
+----------------------------------------
+Distance between two points:
+Distance between (3,4) and (7,1) is 5.00

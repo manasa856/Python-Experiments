@@ -1,0 +1,33 @@
+import math
+
+def factorial(n):
+    return math.prod(range(1, n + 1)) if n >= 0 else "Invalid"
+
+def largest(lst):
+    return max(lst) if lst else "Empty list"
+
+def area(shape, *args):
+    if shape == 'circle':
+        return math.pi * args[0]**2
+    elif shape == 'rectangle':
+        return args[0] * args[1]
+    elif shape == 'triangle':
+        return 0.5 * args[0] * args[1]
+    else:
+        return "Invalid shape"
+
+# Examples
+print("Factorial of 5:", factorial(5))
+print("Largest in [4, 9, 1]:", largest([4, 9, 1]))
+print("Area of circle (r=3):", area('circle', 3))
+print("Area of rectangle (5x2):", area('rectangle', 5, 2))
+print("Area of triangle (4x3):", area('triangle', 4, 3))
+
+
+OUTPUT:
+
+Factorial of 5: 120
+Largest in [4, 9, 1]: 9
+Area of circle (r=3): 28.274333882308138
+Area of rectangle (5x2): 10
+Area of triangle (4x3): 6.0

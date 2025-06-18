@@ -1,0 +1,45 @@
+# 1. Number Series (e.g., Even numbers up to n)
+def number_series(n):
+    print("Even Number Series up to", n)
+    for i in range(2, n+1, 2):
+        print(i, end=' ')
+    print()
+
+# 2. Number Pattern (e.g., right-angled triangle)
+def number_pattern(rows):
+    print("Number Pattern:")
+    for i in range(1, rows + 1):
+        for j in range(1, i + 1):
+            print(j, end=' ')
+        print()
+
+# 3. Pyramid Pattern
+def pyramid_pattern(rows):
+    print("Pyramid Pattern:")
+    for i in range(1, rows + 1):
+        print(' ' * (rows - i) + '* ' * i)
+
+# Example usage
+n = 10
+number_series(n)
+
+rows = 5
+number_pattern(rows)
+pyramid_pattern(rows)
+
+
+OUTPUT:
+Even Number Series up to 10
+2 4 6 8 10 
+Number Pattern:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+Pyramid Pattern:
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 

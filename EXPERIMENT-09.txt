@@ -1,0 +1,30 @@
+import math
+
+# Function to calculate GCD
+def find_gcd(a, b):
+    return math.gcd(a, b)
+
+# Function to calculate LCM
+def find_lcm(a, b):
+    return abs(a * b) // find_gcd(a, b)
+
+# Main program
+try:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+
+    gcd = find_gcd(num1, num2)
+    lcm = find_lcm(num1, num2)
+
+    print("GCD of", num1, "and", num2, "is:", gcd)
+    print("LCM of", num1, "and", num2, "is:", lcm)
+
+except ValueError:
+    print("Invalid input! Please enter valid integers.")
+
+OUTPUT:
+
+Enter first number: 6
+Enter second number: 4
+GCD of 6 and 4 is: 2
+LCM of 6 and 4 is: 12

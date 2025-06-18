@@ -1,0 +1,26 @@
+# 1. Reverse a string
+def reverse_string(s):
+    return s[::-1]
+
+# 2. Count characters in a string
+def character_count(s):
+    return len(s)
+
+# 3. Replace characters in a string
+def replace_characters(s, old, new):
+    return s.replace(old, new)
+
+# Sample usage
+text = "hello world"
+
+print("Original String:", text)
+print("Reversed String:", reverse_string(text))
+print("Character Count:", character_count(text))
+print("Replace 'l' with '*':", replace_characters(text, 'l', '*'))
+
+
+OUTPUT:
+Original String: hello world
+Reversed String: dlrow olleh
+Character Count: 11
+Replace 'l' with '*': he**o wor*d
